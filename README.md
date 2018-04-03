@@ -4,17 +4,17 @@ Gives the differences with line numbers for two text files
 I got tired of continuously comparing my output by the sample output provided for any assignments, so I made this small program in Java that outputs any differences found between the two files.
 
 #Compiling
-To compile this program, you can simply compile the program using 'javac diffComparer.java'
+To compile this program, you can simply compile the program using ```javac diffComparer.java```
 
 
 #Running
-To run this program, you can simply use the command 'java diffComparer <originalFile>.txt <yourFile>.txt
+To run this program, you can simply use the command ```java diffComparer <originalFile>.txt <yourFile>.txt```
   
 #Output
 If you run the program with the files provided in the repository, you will see output like this. 
 I have divided the sections so it is easy for you to pinpoint where the files don't match based on the line numbers.
 
-
+```
 ----------------------DIFFS-------------------
 Line Number: 1
 Your Output:
@@ -34,3 +34,5 @@ Original Output:
 =============================================
 
 =============================================
+
+```
