@@ -16,21 +16,29 @@ I have divided the sections so it is easy for you to pinpoint where the files do
 
 ```
 ----------------------DIFFS-------------------
-Line Number: 1
+ -----------------
+| Line Number: 1 |
+ -----------------
 Your Output:
-[Virtual address: 16915 Physical address: 20 Value: 0, Virtual address: 30193 Physical address: 758 Value: 29]
+
+Virtual address: ```diff -16915``` Physical address: 20 Value: 0
 =============================================
 Original Output:
-[Virtual address: 16916 Physical address: 20 Value: 0, Virtual address: 30198 Physical address: 758 Value: 29]
+
+Virtual address: ```diff +16916``` Physical address: 20 Value: 0
 =============================================
 
 =============================================
-Line Number: 3
+ -----------------
+| Line Number: 3 |
+ -----------------
 Your Output:
-[Virtual address: 16915 Physical address: 20 Value: 0, Virtual address: 30193 Physical address: 758 Value: 29]
+
+Virtual address: ```diff -30193``` Physical address: 758 Value: 29
 =============================================
 Original Output:
-[Virtual address: 16916 Physical address: 20 Value: 0, Virtual address: 30198 Physical address: 758 Value: 29]
+
+Virtual address: ```diff +30198``` Physical address: 758 Value: 29
 =============================================
 
 =============================================
