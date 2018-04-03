@@ -8,7 +8,9 @@ To compile this program, you can simply compile the program using ```javac diffC
 
 
 #Running
-To run this program, you can simply use the command ```java diffComparer <originalFile>.txt <yourFile>.txt```
+To run this program, there are two ways.
+- If you simply want the lines that are diffs, you can simply use the command ```java diffComparer <originalFile>.txt <yourFile>.txt```
+- If you want to get deep diagnostics on what is different in the line, you can use the command ```java diffComparer -deep <originalFile>.txt <yourFile>.txt```
   
 #Output
 If you run the program with the files provided in the repository, you will see output like this. 
@@ -21,11 +23,11 @@ I have divided the sections so it is easy for you to pinpoint where the files do
  -----------------
 Your Output:
 
-Virtual address: ```diff -16915``` Physical address: 20 Value: 0
+Virtual address: 16915 Physical address: 20 Value: 0
 =============================================
 Original Output:
 
-Virtual address: ```diff +16916``` Physical address: 20 Value: 0
+Virtual address: 16916 Physical address: 20 Value: 0
 =============================================
 
 =============================================
@@ -34,11 +36,11 @@ Virtual address: ```diff +16916``` Physical address: 20 Value: 0
  -----------------
 Your Output:
 
-Virtual address: ```diff -30193``` Physical address: 758 Value: 29
+Virtual address: 30193 Physical address: 758 Value: 29
 =============================================
 Original Output:
 
-Virtual address: ```diff +30198``` Physical address: 758 Value: 29
+Virtual address: 30198 Physical address: 758 Value: 29
 =============================================
 
 =============================================
