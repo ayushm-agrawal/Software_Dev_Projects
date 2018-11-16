@@ -29,9 +29,15 @@ body {
 }
 
 .intro {
-  padding: 2rem;
+  padding-left: 2rem;
 }
 
+.intro1 {
+  padding: 2rem;
+}
+.hyperlink {
+  color: yellow;
+}
 .IntroPara {
   padding-bottom: 4rem;
 }
@@ -44,6 +50,7 @@ body {
 }
 .two {
   background-color: #ef343b; /*#ED1C24;*/
+  padding-bottom: 7rem;
 }
 
 #methane {
@@ -53,6 +60,25 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+#landfillImage {
+  position: absolute;
+  width: 35.7rem;
+  right: 52px;
+  height: auto;
+}
+
+#headerImg1 {
+  position: absolute;
+  width: 33rem;
+  /* float: right; */
+  padding-left: 61%;
+  padding-top: 2rem;
+}
+
+#methaneImg {
+  width: 27vw;
+  padding-right: 68%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
