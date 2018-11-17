@@ -3,8 +3,14 @@
 .App {
   text-align: center;
 }
+
+#container {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
+
   font-family: 'PT Sans', sans-serif;
 }
 .App-logo {
@@ -13,7 +19,11 @@ body {
 }
 
 .one {
-  background-color: #79A9D1;
+  background-color:#a4c4f4;
+  padding-top: 5%;
+ /* background: #8e9eab; !* fallback for old browsers *!
+  background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3); !* Chrome 10-25, Safari 5.1-6 *!
+  background: linear-gradient(to right, #8e9eab, #eef2f3);*/
 }
 .App-header {
   font-family: 'Raleway', sans-serif;
@@ -25,7 +35,8 @@ body {
 }
 
 .three {
-  background-color: #79A9D1;
+  background-color: #a4c4f4;
+  padding-top: 5%;
 }
 
 .hungerNebraska{
@@ -47,6 +58,40 @@ body {
   padding-left: 2rem;
 }
 
+#ul {
+  list-style-type: none;
+  margin: 0;
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#ul li {
+  list-style: none;
+  float: left;
+}
+
+#ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#ul li a:hover {
+  background: #262626;
+  color: #ffffff;
+}
+
+
 .intro1 {
   padding: 2rem;
 }
@@ -63,9 +108,27 @@ body {
   width: 28%;
   left: auto;
 }
+
+.video {
+  padding-left: 27vw;
+}
+
+.reduceFoodWaste{
+  width: 25rem;
+}
+
 .two {
-  background-color: #ef343b; /*#ED1C24;*/
-  padding-bottom: 7rem;
+  background-color: #ec9c9c;
+  padding-bottom: 1rem;
+  padding-top: 5%;
+/*  background: #6190e8; !* fallback for old browsers *!
+  background: -webkit-linear-gradient(to right, #6190e8, #a7bfe8); !* Chrome 10-25, Safari 5.1-6 *!
+  background: linear-gradient(to right, #6190e8, #a7bfe8);
+  padding-bottom: 7rem;*/
+}
+
+.lastSection {
+  width: 20rem;
 }
 
 #methane {
