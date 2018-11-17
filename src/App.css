@@ -6,7 +6,6 @@
 
 #container {
   scroll-behavior: smooth;
-  overflow-y: scroll;
 }
 
 body {
@@ -73,7 +72,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 #ul li {
   list-style: none;
