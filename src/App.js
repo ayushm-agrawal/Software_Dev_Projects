@@ -27,6 +27,16 @@ class App extends Component {
           <p align="left" className="intro"> <strong>For more information:</strong> <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0007940" className="hyperlink">The Progressive Increase of Food Waste in America and Its Environmental Impact</a></p>
         </div>
         <div className="three">
+          <h1 align="left" id="methane">1 in 6 people in America face hunger!</h1>
+          <p align="left" className="intro">Even in the world’s greatest food-producing nation, children and adults face poverty and hunger in every county across America. In 2017:</p>
+          <ul className="list">
+            <li>40 million people struggle with hunger in the United States, including more than 12 million children.</li><br/>
+            <li>A household that is food insecure has limited or uncertain access to enough food to support a healthy life.</li><br/>
+            <li>Households with children were more likely to be food insecure than those without children</li><br/>
+          </ul>
+          <img src={require('./images/nebraska-hunger.PNG')} alt="nebraska-hunger" className="hungerNebraska"/>
+        </div>
+        <div className="four">
 
         </div>
       </div>
