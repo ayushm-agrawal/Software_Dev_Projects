@@ -4,7 +4,7 @@
   text-align: center;
 }
 body {
-
+  width: 100%;
   font-family: 'PT Sans', sans-serif;
 }
 .App-logo {
@@ -22,6 +22,21 @@ body {
   font-size: calc(12px + 2vmin);
 
   color: #161B33;
+}
+
+.three {
+  background-color: #79A9D1;
+}
+
+.hungerNebraska{
+  width: 27rem;
+  padding-left: 52vw;
+}
+
+.list {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  text-align: left;
 }
 
 .App-link {
