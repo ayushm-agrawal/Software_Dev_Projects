@@ -45,7 +45,7 @@ class App extends Component {
             </ul>
             <img src={require('./images/nebraska-hunger.PNG')} alt="nebraska-hunger" className="hungerNebraska"/>
           </div>
-          <div className="two"  id="reduce-food-waste">
+          <div className="two"  id="reducing-food-waste">
             <h1 align="left" id="methane">How can we reduce Food Waste? <img src={require('./images/adults.png')} alt="people" align="middle" className="lastSection"/> </h1>
             <br/>
             <p align="left" className="intro"> The reduction of food waste starts at home. If you start keeping track of what you put in your body and
