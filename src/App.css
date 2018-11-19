@@ -39,6 +39,12 @@ body {
   padding-top: 5%;
 }
 
+.last {
+  background-color: #a4c4f4;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
 .hungerNebraska{
   width: 27rem;
   padding-left: 52vw;
