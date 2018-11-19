@@ -11,7 +11,7 @@ class App extends Component {
           <li><a href="#food-waste">Introduction</a></li>
           <li><a href="#methane-gas">Methane Gas</a></li>
           <li><a href="#hunger-in-america">Hunger</a></li>
-          <li><a href="#reducing-food-waste">Reduction</a></li>
+          <li><a href="#reduce-food-waste">Reduction</a></li>
           <li><a href="#references">References</a></li>
         </ul>
         <div id="container">
