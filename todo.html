@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <title>To-Do</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="todo.css" type="text/css" >
+    </head>
+    <body>
+        <div class="d-flex flex-column">
+            <!--Change Theme -->
+            <div class="p-2">
+                <p> Type :todo in the address bar ⬆, press TAB and start adding things to your To-Do List</p> 
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <button type="button" id="gradient" class="btn btn-circle btn-xl"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id="white" class="btn btn-circle btn-xl"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id="dark" class="btn btn-circle btn-xl"></button>
+                    </div>  
+                </div>
+            </div>
+            <!-- TODO Form -->
+            <div class="p-2">
+                <div class="form-group">
+                    <h1>Anywhere TO-DO <small>List</small></h1>
+                </div>
+                <div></div>
+                <ul class="list-group" id="todo-ul"></ul>
+            </div>
+        </div>
+        <div class="bottom">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <script src="todo.js" async defer></script>
+    </body>
+</html>
