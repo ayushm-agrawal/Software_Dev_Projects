@@ -1,8 +1,8 @@
 :root {
-    /* --primary-color: #302AE6;
-    --secondary-color: #536390; */
+    --primary-color: #302AE6;
+    --secondary-color: #424242;
     --font-color: #424242;
-    --bg-color: #fff;
+    --bg-color: linear-gradient(120deg, #487eb0, #fbc531);
     --heading-color: #292922;
 }
 
@@ -16,9 +16,9 @@
 
 [data-theme="gradient"] {
     --primary-color: #fff;
-    --secondary-color: #161625;
+    --secondary-color: #fff;
     --font-color: #e1e1ff;
-    --bg-color: linear-gradient(to bottom right, #6e45e2, #88d3ce);
+    --bg-color: linear-gradient(to bottom right, #c94b4b, #4b134f);
     --heading-color: #fff;
 }
 
@@ -52,7 +52,7 @@ a.close {
 }
 
 #white{
-    background: linear-gradient(to bottom right, #dad4ec, #f3e7e9);
+    background: linear-gradient(120deg, #487eb0, #fbc531);
 }
 
 #dark {
@@ -60,11 +60,7 @@ a.close {
 }
 
 #gradient {
-    background: linear-gradient(to bottom right, #6e45e2, #88d3ce);
-}
-
-.col-md-2{
-    width: 10%;
+    background: linear-gradient(to bottom right, #c94b4b, #4b134f);
 }
 
 .row{
@@ -74,10 +70,21 @@ a.close {
 body {
     background: var(--bg-color);
     color: var(--font-color);
-    height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    background: var(--bg-color);
 }
 
 h1 {
+    color: var(--secondary-color);
+}
+
+h3{
+    margin: 10px 0;
     color: var(--secondary-color);
 }
 
@@ -87,4 +94,21 @@ a {
 
 .bottom {
     font-size: xx-small;
+}
+
+.task {
+    background: rgba(255,255,255,0.5);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.comp .task {
+    background: rgba(0,0,0,0.5);
+    color: white;
 }
