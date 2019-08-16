@@ -6,29 +6,38 @@ window.addEventListener('load', function load(event) {
         };
     });
 
+    //Sync the data from the older session and display it in Tasks
     chrome.storage.local.get('todo_data', function(data) {
-        console.log("Fetched TO-DO data!");
-        console.log(data.todo_data[0]);
         let length = data.todo_data.length;
         let list = [];
         for(let i =0; i < length; i++){
             let obj = data.todo_data[i];
-            // console.log("OBJ: ", obj.text);
             list.push(obj.text);
             
         }
 
-        console.log(list);
+        addToTaskList(list);
+    });
 
-        addToList(list);
+    //Sync the data from the older session and display it in Completed
+    chrome.storage.local.get('todo_comp', function(data) {
+        let length = data.todo_comp.length;
+        let list = [];
+        for(let i =0; i < length; i++){
+            let obj = data.todo_comp[i];
+            list.push(obj.text);
+            
+        }
+
+        addToCompList(list);
     });
 });
 
-
+//This triggers when a users enters the task in the address bar on Chrome
 chrome.omnibox.onInputEntered.addListener(function(text){
     let data = [];
     data.push(text);
-    addToList(data);
+    addToTaskList(data);
     saveData(text);
 })
 
@@ -38,21 +47,103 @@ function saveData(text) {
         let todo_data = result.todo_data;
         todo_data.push({text: text, HasBeenUploadedYet: false});
 
-        chrome.storage.local.set({'todo_data': todo_data}, function (){
-            chrome.storage.local.get('todo_data', function (result) {
-                console.log("this: ?" , result.todo_data);
-            });
-        }); 
+        chrome.storage.local.set({'todo_data': todo_data});
     });
 }
 
-//Add to list button click
-function addToList(data){
-    let ul = document.getElementById("todo-ul");
+//Add Item to Task List
+function addToTaskList(data){
     for(let i = 0; i < data.length; i++){
-        let li = document.createElement("li");
-        li.appendChild(document.createTextNode(data[i]));
-        ul.appendChild(li);
+        var task = $("<div class='task'></div>").text(data[i]);
+
+        var del = trashIcon();
+        var check = checkIcon();
+        
+        task.append(del,check);
+        $(".notcomp").append(task);
+    }
+}
+
+//Add item to Completed List
+function addToCompList(data){
+    for(let i = 0; i < data.length; i++){
+        var task = $("<div class='task'></div>").text(data[i]);
+
+        var del = trashIcon();
+        
+        task.append(del);
+        $(".comp").append(task);
+    }
+}
+
+//delete the task on trash icon click
+function trashIcon() {
+    var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+        var p = $(this).parent();
+        var text =p[0].innerText;
+        p.fadeOut(function(){
+            p.remove();
+            removeItem(text);
+        });
+    });
+    return del;
+}
+
+// Move the task to completed on check click
+function checkIcon() { 
+    var check = $("<i class='fas fa-check'></i>").click(function() {
+        var p = $(this).parent();
+        var text =p[0].innerText;
+        p.fadeOut(function(){
+            $(".comp").append(p);
+            addToCompleted(text);
+            p.fadeIn();
+        });
+        $(this).remove();
+    });
+    return check;
+}
+
+//Add item to completed storage list
+function addToCompleted(text){
+    chrome.storage.local.get({"todo_comp": []}, function(result){
+        let todo_comp = result.todo_comp;
+        console.log("Result: ", todo_comp);
+        todo_comp.push({text: text, HasBeenUploadedYet: false});
+
+        chrome.storage.local.set({'todo_comp': todo_comp});
+    });
+
+    removeItem(text, false);
+}
+
+//Remove item from the chrome storage
+function removeItem(text, completed=true){
+    chrome.storage.local.get({"todo_data": []}, function(result){
+        let todo_data = result.todo_data;
+        for(let i=0; i < todo_data.length; i++){
+            let data = (todo_data[i].text).trim();
+            if(data === text.trim()){
+                console.log("Enter here");
+                todo_data.splice(i,i+1);
+                break;
+            }
+        }
+        chrome.storage.local.set({'todo_data': todo_data});
+    });
+
+    if(completed == true) {
+        chrome.storage.local.get({"todo_comp": []}, function(result){
+            let todo_comp = result.todo_comp;
+            for(let i=0; i < todo_comp.length; i++){
+                let data = (todo_comp[i].text).trim();
+                if(data === text.trim()){
+                    todo_comp.splice(i,i+1);
+                    break;
+                }
+            }
+            chrome.storage.local.set({'todo_comp': todo_comp});
+        });
     }
 }
 
