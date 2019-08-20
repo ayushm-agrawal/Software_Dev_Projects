@@ -4,12 +4,12 @@ function resetDefaultSuggestion() {
     })
 }
 
-chrome.windows.onCreated.addListener(function () {
-    chrome.windows.getAll(function (windows) {
-        if (windows.length == 1) {
-            getData();
-        }
-    });
-});
+// chrome.windows.onCreated.addListener(function () {
+//     chrome.windows.getAll(function (windows) {
+//         if (windows.length == 1) {
+//             getData();
+//         }
+//     });
+// });
 
 resetDefaultSuggestion();
