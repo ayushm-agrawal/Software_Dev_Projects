@@ -10,6 +10,9 @@ I built this simple extension as a 1 day project to help me quickly note down ne
 
 ![alt-text](https://github.com/ayushm-agrawal/Anywhere-To-Do/blob/master/images/todo48.png "LOGO")
 
+**Don't forget to leave a rating**
+:star: :star: :star: :star: :star:
+
 ## Screenshots
 
 ![alt-text](https://github.com/ayushm-agrawal/Anywhere-To-Do/blob/master/ssht_dark.PNG "Screenshot Dark")
@@ -39,3 +42,6 @@ I built this simple extension as a 1 day project to help me quickly note down ne
 
 #### Ver 0.1
 * Initial release.
+
+
+Made with :heart:
