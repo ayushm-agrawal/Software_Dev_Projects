@@ -1,6 +1,6 @@
 {
     "name": "Anywhere TODO",
-    "version": "0.1",
+    "version": "0.3",
     "description": "Simple TODO List for Chrome. Access it from anywhere",
     "manifest_version": 2,
     "chrome_url_overrides": {
