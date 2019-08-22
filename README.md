@@ -32,6 +32,9 @@ I built this simple extension as a 1 day project to help me quickly note down ne
 
 ## Version
 
+#### Ver 0.3.1
+* Fixed bug where new tasks are not added from a different tab while the extension tab is closed.
+
 #### Ver 0.3
 * Fixed bug where if you delete a task it would delete the task after.
 * Added support to store the theme you select in a session. The same theme will now stay in different session.
