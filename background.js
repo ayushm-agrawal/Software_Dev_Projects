@@ -4,12 +4,13 @@ function resetDefaultSuggestion() {
     })
 }
 
-// chrome.windows.onCreated.addListener(function () {
-//     chrome.windows.getAll(function (windows) {
-//         if (windows.length == 1) {
-//             getData();
-//         }
-//     });
-// });
+chrome.omnibox.onInputEntered.addListener(function(text){
+    chrome.storage.local.get({'todo_data': []}, function(result){
+        let todo_data = result.todo_data;
+        todo_data.push({text: text, HasBeenUploadedYet: false});
+
+        chrome.storage.local.set({'todo_data': todo_data});
+    });
+})
 
 resetDefaultSuggestion();
