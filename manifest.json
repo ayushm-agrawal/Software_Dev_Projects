@@ -1,13 +1,14 @@
 {
     "name": "Anywhere TODO",
-    "version": "0.3",
+    "version": "0.3.1",
     "description": "Simple TODO List for Chrome. Access it from anywhere",
     "manifest_version": 2,
     "chrome_url_overrides": {
         "newtab": "todo.html"
     },
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["background.js"],
+        "persistent": false
     },
     "permissions": [ "storage"],
     "omnibox": { "keyword" : ":todo" },
