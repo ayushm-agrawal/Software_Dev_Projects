@@ -36,7 +36,6 @@ I have divided the sections so it is easy for you to pinpoint where the files do
 Your Output:
 
 Virtual address: 16915 Physical address: 20 Value: 0
-=============================================
 Original Output:
 
 Virtual address: 16916 Physical address: 20 Value: 0
@@ -58,3 +57,9 @@ Virtual address: 30198 Physical address: 758 Value: 29
 =============================================
 
 ```
+=======
+
+## WIMTA
+This project was started during Cornhacks 2018
+
+[![Build Status](https://travis-ci.com/aagrawal20/WIMTA.svg?token=E4PPykn1BySzihqGnWTA&branch=master)](https://travis-ci.com/aagrawal20/WIMTA)
