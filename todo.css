@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #424242;
+    --font-color: #424242;
+    --bg-color: linear-gradient(120deg, #487eb0, #fbc531);
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+[data-theme="gradient"] {
+    --primary-color: #fff;
+    --secondary-color: #fff;
+    --font-color: #e1e1ff;
+    --bg-color: linear-gradient(to bottom right, #c94b4b, #4b134f);
+    --heading-color: #fff;
+}
+
+form {
+    display: inline-block;
+}
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+#todo {
+    margin: 0 auto;
+    width: 500px;
+}
+
+a.close {
+  float: right;
+}
+
+.p-2{
+    text-align: center;
+}
+
+.btn-circle.btn-xl {
+    width: 3rem;
+    height: 3rem;
+    padding: 10px 16px;
+    border-radius: 50%;
+    border: 1px solid white;
+    line-height: 1.33;
+}
+
+#white{
+    background: linear-gradient(120deg, #487eb0, #fbc531);
+}
+
+#dark {
+    background: linear-gradient(to bottom right, #29323c, #485563);
+}
+
+#gradient {
+    background: linear-gradient(to bottom right, #c94b4b, #4b134f);
+}
+
+.row{
+    margin-top: 4rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--font-color);
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    background: var(--bg-color);
+    height: 100%;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+h3{
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.bottom {
+    font-size: xx-small;
+}
+
+.task {
+    background: rgba(255,255,255,0.5);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.comp .task {
+    background: rgba(0,0,0,0.5);
+    color: white;
+}

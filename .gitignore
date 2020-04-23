@@ -1,7 +1,6 @@
 *.iml
 .gradle
 /local.properties
-<<<<<<< HEAD
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
@@ -30,7 +29,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-=======
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -42,4 +40,3 @@ yarn-error.log*
 /build
 /captures
 .externalNativeBuild
->>>>>>> HuskerEats/master
