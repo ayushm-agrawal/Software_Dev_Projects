@@ -3,11 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/WeatherForecastTemplate.iml" filepath="$PROJECT_DIR$/WeatherForecastTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/.idea/Files-Diff-Compare.iml" filepath="$PROJECT_DIR$/.idea/Files-Diff-Compare.iml" />
 >>>>>>> Files-Diff-Compare/master
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/food-waste.iml" filepath="$PROJECT_DIR$/.idea/food-waste.iml" />
+>>>>>>> Food-Waste-Awareness/master
     </modules>
   </component>
 </project>

@@ -39,7 +39,6 @@ Virtual address: 16915 Physical address: 20 Value: 0
 Original Output:
 
 Virtual address: 16916 Physical address: 20 Value: 0
-=============================================
 
 =============================================
  -----------------
@@ -57,7 +56,6 @@ Virtual address: 30198 Physical address: 758 Value: 29
 =============================================
 
 ```
-=======
 
 ## WIMTA
 This project was started during Cornhacks 2018
