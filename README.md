@@ -40,7 +40,6 @@ Original Output:
 
 Virtual address: 16916 Physical address: 20 Value: 0
 
-=============================================
  -----------------
 | Line Number: 3 |
  -----------------
@@ -61,3 +60,9 @@ Virtual address: 30198 Physical address: 758 Value: 29
 This project was started during Cornhacks 2018
 
 [![Build Status](https://travis-ci.com/aagrawal20/WIMTA.svg?token=E4PPykn1BySzihqGnWTA&branch=master)](https://travis-ci.com/aagrawal20/WIMTA)
+
+
+## HuskerEats
+This android application was started at Cornhacks 19'. 
+
+We created a platform to allow students to get meals delivered by other students from around the campus by creating a trade off system.
